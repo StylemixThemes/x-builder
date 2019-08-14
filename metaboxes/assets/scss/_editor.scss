@@ -1,0 +1,64 @@
+.stmt-to-editor {
+    margin: 0 0 30px;
+    textarea {
+        display: none;
+    }
+    .quillWrapper {
+        p {
+            margin-bottom: 30px;
+        }
+        .ql-container.ql-snow,
+        .ql-toolbar.ql-snow {
+            border: .1rem solid #d1d1d1;
+        }
+        .ql-toolbar.ql-snow {
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            .ql-formats {
+                display: inline-block;
+                margin-right: 5px;
+                button{
+                    margin-bottom: 0;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+        .ql-container.ql-snow {
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .ql-snow .ql-tooltip {
+            left: -1px !important;
+        }
+        .ql-image {
+            display: none;
+        }
+        .ql-snow .ql-picker.ql-header {
+            width: auto;
+            svg {
+                display: none;
+            }
+        }
+
+        /*Hide ITEMS*/
+        .ql-italic,
+        .ql-underline,
+        .ql-strike,
+        .ql-align,
+        .ql-code-block,
+        .ql-list[value="check"],
+        .ql-video,
+        .ql-background,
+        .ql-indent {
+            display: none;
+        }
+    }
+}
+
+.stmt-to-hint {
+    textarea {
+
+    }
+}

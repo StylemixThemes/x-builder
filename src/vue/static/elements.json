@@ -1,0 +1,43 @@
+[
+    {
+        "module": "text",
+        "name": "Text",
+        "params": {
+            "fields": [
+                {
+                    "id": "myText",
+                    "type": "text",
+                    "label": "My text",
+                    "value" : "kekeke"
+                },
+                {
+                    "id": "myText2",
+                    "type": "text",
+                    "label": "My text 2",
+                    "showParam": true
+                },
+                {
+                    "id": "myText3",
+                    "type": "text",
+                    "label": "My text 3",
+                    "showParam": true
+                }
+            ]
+        }
+    },
+    {
+        "module": "image",
+        "name": "Image",
+        "params": {
+            "fields": [
+                {
+                    "id": "myText",
+                    "type": "text",
+                    "label": "My text",
+                    "showParam": true,
+                    "value" : "kekeke"
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,21 @@
+.tabs_style_buttons {
+    .x_best_sellers__categories {
+        .x_best_sellers__category {
+            i {
+                display: none;
+            }
+            &:before {
+                padding: 3px 15px 4px;
+                content: attr(data-title);
+                font-size: 18px;
+                border: 1px solid transparent;
+                border-radius: 15px;
+            }
+            &.active {
+                &:before {
+                    border-color: $original_s_c;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner .stmt-curriculum.stmt-curriculum-questions {
+    .stmt-curriculum-list {
+        .stmt-curriculum-single {
+            flex-wrap: wrap;
+            &--meta {
+                width: 100%;
+                padding: 15px 0;
+            }
+        }
+    }
+    .searching-container.searching {
+        .open-indicator {
+            &:before {
+                content: "\e861";
+                border: 0;
+                width: 10px;
+                height: 10px;
+                font-family: Linearicons-Free;
+                speak: none;
+                font-style: normal;
+                font-weight: 400;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                animation: spin 2s infinite;
+                transform-origin: center center;
+                z-index: 110;
+            }
+        }
+    }
+}

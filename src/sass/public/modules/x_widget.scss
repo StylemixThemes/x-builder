@@ -1,0 +1,20 @@
+@import "../variables";
+
+.x_widget .widget {
+    .widget-title {
+        margin: 25px 0 16px 9px;
+        font-size: 18px;
+        letter-spacing: 0.4px;
+    }
+}
+
+.x_widget {
+    .widget.widget_product_categories {
+        li > a {
+            padding-left: 56px;
+            i {
+                left: 15px;
+            }
+        }
+    }
+}

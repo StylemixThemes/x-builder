@@ -1,0 +1,107 @@
+@import "../variables";
+@import "../components/mixins";
+
+.x_categories_grid {
+    position: relative;
+
+    h3 {
+        margin: 0 0 50px;
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 700;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: calc(25% - 15px);
+        margin: 0 15px 70px 0;
+        display: flex;
+        align-items: center;
+
+        &_image {
+            width: 45%;
+        }
+
+        &_content {
+            width: 50%;
+            margin-left: auto;
+        }
+
+        &_parent {
+            margin: 0 0 8px;
+
+            a {
+                font-size: 19px;
+                font-weight: 500;
+                color: #fff;
+            }
+        }
+
+        &_childs {
+            a {
+                font-size: 13px;
+                color: #fff;
+            }
+        }
+
+        .parent_view_all {
+            margin: 15px 0 0;
+
+            a {
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 12px;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(1350px) {
+    .x_categories_grid {
+        .x_categories_grid__item {
+            align-items: flex-start;
+        }
+        .x_categories_grid__item_parent {
+            a {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@include breakpoint(tablet) {
+    .x_categories_grid__item {
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        &_image {
+            width: 100%;
+            margin: 0 0 15px;
+        }
+
+        &_content {
+            width: 100%;
+        }
+    }
+}
+
+@include breakpoint(tabletonly) {
+    .x_categories_grid__item {
+        width: calc(50% - 15px);
+        text-align: center;
+    }
+}
+
+@include breakpoint(400px) {
+    .x_categories_grid__item {
+        width: 100%;
+        text-align: center;
+    }
+}

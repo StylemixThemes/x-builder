@@ -1,0 +1,219 @@
+@import "components/base_variables";
+@import "components/mixins";
+
+.section,
+.row-x,
+.col-x,
+.element {
+    .section-actions-wrapper,
+    .col-actions-wrapper,
+    .element-actions-wrapper,
+    .x-row-actions-wrapper {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -2px;
+            right: -2px;
+            background-color: transparent;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            box-shadow: 3px 3px 0 rgba(0,0,0,0);
+            transition: .3s ease;
+        }
+
+        &:hover {
+            &:after {
+                border-color: $edit;
+                box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+            }
+            .right_part {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .col-actions,
+        .x-row-actions,
+        .element-actions,
+        .section-actions {
+            z-index: 99;
+        }
+    }
+    .section-actions-wrapper {
+        &:after {
+            top: -3px;
+            bottom: -2px;
+        }
+    }
+}
+
+.hint {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    visibility: hidden;
+    opacity: 0;
+    background-color: $edit;
+    font-size: 12px;
+    line-height: 1;
+    padding: 3px 10px;
+    color: #fff;
+    transform: translateX(-50%) translateY(0);
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.element-actions,
+.col-actions,
+.x-row-actions,
+.section-actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 7px 12px;
+
+    a {
+        position: relative;
+        text-decoration: none !important;
+
+        span {
+            color: $edit;
+            font-size: 16px;
+        }
+
+        &.add {
+            span {
+                font-size: 20px;
+            }
+        }
+
+        &.edit {
+            span {
+                font-size: 18px;
+                position: relative;
+                top: 1px;
+                left: 1px;
+            }
+        }
+
+        &.duplicate {
+            span {
+                font-size: 16px;
+                position: relative;
+                top: 1px;
+            }
+        }
+
+        &.delete {
+            span {
+                font-size: 12px;
+            }
+        }
+        &:hover {
+            .hint {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(-50%) translateY(-5px);
+                transition: .3s ease;
+            }
+        }
+    }
+
+    .right_part {
+        position: absolute;
+        right: 14px;
+        top: -18px;
+
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease;
+
+        a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            margin-left: 2px;
+            border: 2px solid #fff;
+            background-color: $edit;
+            text-align: center;
+            line-height: 33px;
+            border-radius: 50%;
+            transition: .3s ease;
+
+            &:hover {
+                background-color: $hover;
+            }
+
+            &.delete {
+                &:hover {
+                    background-color: $delete;
+                }
+            }
+
+            span {
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+.element-actions {
+    .right_part {
+        right: 5px;
+        a {
+            width: 28px;
+            height: 28px;
+            margin-left: 0;
+            &.edit {
+                span {
+                    position: relative;
+                    top: -3px;
+                    font-size: 16px;
+                }
+            }
+            &.duplicate {
+                span {
+                    position: relative;
+                    top: -2px;
+                    font-size: 16px;
+                }
+            }
+            &.delete {
+                span {
+                    position: relative;
+                    top: -5px;
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
+
+
+/*INNER ROW*/
+.row .col {
+    .row {
+        .col {
+            .col-actions {
+                .right_part {
+                    top: -11px;
+                    a {
+                        width: 25px;
+                        height: 25px;
+                        line-height: 25px;
+                        span {
+                            position: relative;
+                            top: -1px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

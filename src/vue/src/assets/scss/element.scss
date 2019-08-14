@@ -1,0 +1,33 @@
+@import "components/base_variables";
+
+.text-truncate {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.element_value,
+.element_label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h4 {
+    margin: 0;
+    font-size: 13px;
+    font-family: Arial, sans-serif, Helvetica;
+}
+
+
+.element_content_field {
+    display: block;
+    max-width: 100px;
+    font-size: 13px;
+    font-family: $font;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    p {
+        white-space: nowrap;
+    }
+}

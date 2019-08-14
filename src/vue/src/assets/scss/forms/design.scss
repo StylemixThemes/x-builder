@@ -1,0 +1,121 @@
+@import "typo";
+@import "../components/base_variables";
+
+.x-design {
+    
+}
+
+.x-design-structure {
+    display: flex;
+    position: relative;
+    padding: 37px 0;
+    width: 200px;
+    > * {
+        max-width: 70px;
+    }
+    .coltop,
+    .colbottom {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .coltop {
+        top: 0;
+    }
+    .colright {
+        order: 100;
+        margin-left: auto;
+    }
+    .colleft {
+        order: 50;
+    }
+    .colbottom {
+        bottom: 0;
+    }
+
+    .input-group-text {
+        min-width: 30px;
+        justify-content: center;
+        background-color: #fff;
+        color: rgba(0,0,0,0.5);
+    }
+}
+
+.x-design-structure-radius {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 230px;
+    > * {
+        width: 80px;
+        margin: 0 7px 14px;
+    }
+    .coltop-left {
+        margin-left: 0;
+        .input-group-prepend {
+            order: -1;
+            margin-left: 2px;
+        }
+    }
+    .coltop-right {
+        .input-group-prepend {
+            order: 999;
+            margin-left: 2px;
+        }
+    }
+    .colbottom-left {
+        margin-left: 0;
+        .input-group-prepend {
+            order: -1;
+            margin-left: 2px;
+        }
+    }
+    .colbottom-right {
+        .input-group-prepend {
+            order: 999;
+            margin-left: 2px;
+        }
+    }
+    .input-group {
+        margin-bottom: 0 !important;
+        &-prepend {
+            margin-right: 2px !important;
+            .input-group-text {
+                width: 32px;
+                border: 0;
+                font-size: 0 !important;
+                background-color: #98b4b7;
+            }
+        }
+        .form-control {
+            border-radius: 0;
+            &:focus {
+                box-shadow: none;
+                + .input-group-prepend {
+                    .input-group-text {
+                        background-color: $edit;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.box-shadow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -7.5px;
+    input[type="number"] {
+        margin: 0 7.5px;
+        padding: 5px 15px;
+        width: calc(33.3333% - 15px);
+        border: 1px solid #ced4da;
+        border-radius: 3px;
+    }
+    .x-colorpicker-wrapper {
+        width: 100%;
+        margin: 0 7.5px;
+    }
+}

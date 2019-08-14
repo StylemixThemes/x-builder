@@ -1,0 +1,13 @@
+.x_section {
+    &__fullwidth {
+        position: relative;
+        padding: 0 15px;
+        overflow-x: hidden;
+        &-no-padding {
+            position: relative;
+            padding: 0;
+            overflow-x: hidden;
+            max-width: initial !important;
+        }
+    }
+}

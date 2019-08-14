@@ -1,0 +1,316 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: X Builder\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-30 10:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.0; wp-5.2.2"
+
+#: ReduxFramework/config.php:316
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the "
+"sections array. Can be used by child themes to add/remove sections from the "
+"options.</p>"
+msgstr ""
+
+#: x_builder/global/product_buttons/style_1.php:13
+#: x_builder/global/product_buttons/style_2.php:11
+msgid "Add to cart"
+msgstr ""
+
+#: x_builder/global/product_buttons/style_2.php:54
+msgid "Add to compare"
+msgstr ""
+
+#: x_builder/global/product_buttons/style_1.php:29
+#: x_builder/global/product_buttons/style_2.php:27
+msgid "Add to Wishlist"
+msgstr ""
+
+#: x_builder/global/product_buttons/style_2.php:20
+msgid "Add to wishlist"
+msgstr ""
+
+#: x_builder/x_best_sellers.php:68
+#: x_builder/x_departments_carousel_with_grid_products.php:27
+msgid "All"
+msgstr ""
+
+#: ReduxFramework/config.php:185
+msgid "All X-builder images will be loaded via cdn"
+msgstr ""
+
+#: x_builder/x_best_sellers.php:45
+msgid "BestSellers"
+msgstr ""
+
+#: api/elements/woocommerce/elements/productGridWithSyncCarousel.php:37
+msgid "Bestsellers"
+msgstr ""
+
+#: x_builder/global/product_buttons/style_1.php:37
+#: x_builder/global/product_buttons/style_2.php:35
+#: x_builder/global/product_buttons/style_2.php:42
+msgid "Browse Wishlist"
+msgstr ""
+
+#: api/elements/woocommerce/elements/bestSellers.php:35
+msgid "Buttons"
+msgstr ""
+
+#: ReduxFramework/config.php:176
+msgid "CDN"
+msgstr ""
+
+#: ReduxFramework/config.php:184
+msgid "CDN Url"
+msgstr ""
+
+#: helpers/functions.php:113 helpers/functions.php:156
+msgid "Choose"
+msgstr ""
+
+#: helpers/functions.php:297
+msgid "Clear X Builder Cache"
+msgstr ""
+
+#: x_builder/x_products_filter_grid.php:115
+msgid "Day"
+msgstr ""
+
+#: admin/toolbar.class.php:24
+msgid "Edit with Default Builder"
+msgstr ""
+
+#: admin/toolbar.class.php:25 admin/builder/builder.php:158
+msgid "Edit with X Builder"
+msgstr ""
+
+#: ReduxFramework/config.php:168
+msgid "General Settings"
+msgstr ""
+
+#: api/elements/brands.php:16
+msgid "Grid View"
+msgstr ""
+
+#: api/elements/heading.php:13
+msgid "Heading: "
+msgstr ""
+
+#: api/elements/woocommerce/elements/gridProductsWithTabs.php:77
+msgid "Horizontal"
+msgstr ""
+
+#: x_builder/x_products_filter_grid.php:115
+msgid "Hours"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://stylemixthemes.com/"
+msgstr ""
+
+#: api/elements/iconbox.php:26
+msgid "Icon Left"
+msgstr ""
+
+#: api/elements/iconbox.php:27
+msgid "Icon Right"
+msgstr ""
+
+#: api/elements/iconbox.php:25
+msgid "Icon Top"
+msgstr ""
+
+#: api/elements/woocommerce/elements/bestSellers.php:34
+msgid "Icons"
+msgstr ""
+
+#: helpers/images.php:26
+msgid "Image"
+msgstr ""
+
+#: x_builder/x_departments_carousel_with_grid_products.php:122
+msgid "in stock"
+msgstr ""
+
+#: api/elements/woocommerce/elements/productGridWithSyncCarousel.php:35
+msgid "Latest"
+msgstr ""
+
+#: x_builder/x_products_filter_grid.php:115
+msgid "Minutes"
+msgstr ""
+
+#: api/elements/woocommerce/elements/gridProductsWithTabs.php:23
+msgid "Module Title"
+msgstr ""
+
+#. Description of the plugin
+msgid "Nice X Builder with X Elements"
+msgstr ""
+
+#: x_builder/x_best_sellers/eight-products.php:24
+#: x_builder/x_best_sellers/with-banner.php:31
+#: x_builder/x_best_sellers/default.php:23
+msgid "No Best Sellers products now"
+msgstr ""
+
+#: x_builder/x_products_filter_grid.php:76
+msgid "No products in the category"
+msgstr ""
+
+#: api/elements/woocommerce/elements/gridProductsWithTabs.php:251
+msgid "No products in this category"
+msgstr ""
+
+#: x_builder/x_hot_deals.php:74
+msgid "No products on sale right now"
+msgstr ""
+
+#: x_builder/x_product_hint_image.php:85
+msgid "off"
+msgstr ""
+
+#: x_builder/x_products_grid_carousel.php:62 x_builder/x_hot_deals.php:88
+#: x_builder/x_grid_products_with_tabs.php:143
+#: x_builder/x_departments_carousel_with_grid_products.php:127
+#: x_builder/x_best_sellers/eight-products.php:50
+#: x_builder/x_best_sellers/with-banner.php:59
+#: x_builder/x_best_sellers/default.php:50
+msgid "Out of stock"
+msgstr ""
+
+#: x_builder/x_best_sellers.php:53
+msgid "Popular"
+msgstr ""
+
+#: ReduxFramework/config.php:192
+msgid "Post Types"
+msgstr ""
+
+#: api/elements/woocommerce/elements/productsFilterGrid.php:35
+msgid "Product Card Background"
+msgstr ""
+
+#: x_builder/x_products_grid_carousel.php:79
+#: x_builder/x_featured_products.php:60 x_builder/x_featured_products.php:64
+#: x_builder/x_featured_products.php:71
+#: x_builder/x_products_sale_carousel.php:61
+#: x_builder/x_departments_carousel_with_grid_products.php:92
+#: x_builder/x_departments_carousel_with_grid_products.php:96
+#: x_builder/x_departments_carousel_with_grid_products.php:104
+msgid "Product Image"
+msgstr ""
+
+#: api/elements/woocommerce/elements/productsCarousel.php:11
+msgid "Products Carousel"
+msgstr ""
+
+#: x_builder/global/product_buttons/style_1.php:57
+#: x_builder/global/product_buttons/style_2.php:63
+msgid "Quick View"
+msgstr ""
+
+#: api/elements/woocommerce/elements/productGridWithSyncCarousel.php:38
+msgid "Rating"
+msgstr ""
+
+#: x_builder/x_post_list_carousel.php:91 x_builder/x_post_list.php:130
+msgid "Read more"
+msgstr ""
+
+#: x_builder/x_products_filter_grid.php:85
+#: x_builder/x_grid_products_with_tabs.php:138
+msgid "Sale"
+msgstr ""
+
+#: x_builder/x_products_filter_grid.php:115
+msgid "Seconds"
+msgstr ""
+
+#: ReduxFramework/config.php:315
+msgid "Section via hook"
+msgstr ""
+
+#: x_builder/x_best_sellers/with-banner.php:108
+msgid "Shop now"
+msgstr ""
+
+#: api/elements/woocommerce/elements/bestSellers.php:31
+msgid "Show tabs as"
+msgstr ""
+
+#. Author of the plugin
+msgid "StylemixThemes"
+msgstr ""
+
+#: api/elements/heading.php:16
+msgid "Tag: H"
+msgstr ""
+
+#: ReduxFramework/config.php:170
+msgid "These are really basic fields!"
+msgstr ""
+
+#: api/elements/banner.php:13 api/elements/contact_form.php:15
+#: api/elements/text.php:13
+#: api/elements/woocommerce/elements/categoriesCarousel.php:15
+#: api/elements/woocommerce/elements/productsFilterGrid.php:13
+#: api/elements/woocommerce/elements/productsSaleCarousel.php:13
+#: api/elements/woocommerce/elements/categoryBanner.php:15
+#: api/elements/woocommerce/elements/productGridWithSyncCarousel.php:13
+#: api/elements/woocommerce/elements/featuredProducts.php:15
+#: api/elements/woocommerce/elements/productsGridCarousel.php:13
+#: api/elements/woocommerce/elements/gridProductsWithTabs.php:15
+#: api/elements/woocommerce/elements/hotDeals.php:15
+#: api/elements/woocommerce/elements/bestSellers.php:16
+#: api/elements/woocommerce/elements/dealOfTheDay.php:15
+#: api/elements/woocommerce/elements/categoriesGrid.php:15
+#: api/elements/woocommerce/elements/productsCarousel.php:15
+msgid "Title: "
+msgstr ""
+
+#: x_builder/x_best_sellers.php:61
+#: api/elements/woocommerce/elements/productGridWithSyncCarousel.php:36
+msgid "Trending"
+msgstr ""
+
+#: x_builder/x_product_hint_image.php:80
+msgid "up to"
+msgstr ""
+
+#: api/elements/woocommerce/elements/gridProductsWithTabs.php:76
+msgid "Vertical"
+msgstr ""
+
+#: x_builder/x_products_carousel.php:79
+msgid "View all Deals"
+msgstr ""
+
+#: x_builder/global/product_buttons/style_2.php:32
+#: x_builder/global/product_buttons/style_2.php:39
+msgid "View wishlist"
+msgstr ""
+
+#. Name of the plugin
+msgid "X Builder"
+msgstr ""
+
+#: ReduxFramework/config.php:43
+msgid "X builder"
+msgstr ""
+
+#: ReduxFramework/config.php:44
+msgid "X builder Options"
+msgstr ""

@@ -1,0 +1,33 @@
+@import "components/base_variables";
+
+.row {
+    margin: 0 -3px;
+}
+
+.element {
+    padding: 0 3px;
+    opacity: 0.8;
+    cursor: move;
+    &:hover {
+        opacity: 1;
+    }
+    &.inactive {
+        opacity: 0.2;
+    }
+}
+
+.element-x {
+    margin: 0 0 6px;
+    padding: 10px 15px;
+    background: #F78A92;
+    font-size: 14px;
+    text-align: left;
+    font-family: $font;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.navigation {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,51 @@
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner {
+    .stmt-to-questions {
+        &-single {
+            margin: 0 0 30px;
+            border: .1rem solid #d1d1d1;
+            border-radius: 5px;
+            &_answer {
+                display: flex;
+                padding: 20px 15px 10px;
+                border-bottom: .1rem solid #d1d1d1;
+                &:last-child {
+                    border-bottom: 0;
+                }
+                input {
+                    display: inline-block !important;
+                    vertical-align: middle;
+                    position: relative;
+                    top: -1px;
+                    margin: 0 5px 0 0;
+                    &[type="text"] {
+                        padding: 15px 10px;
+                        margin: 0 0 0 15px;
+                        width: calc(100% - 50px);
+                        height: 20px;
+                        line-height: 20px;
+                        border: .1rem solid #d1d1d1;
+                    }
+                }
+                label {
+                    display: block;
+                    width: 80%;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                }
+                textarea {
+                    margin: 13px 0 0 40px;
+                    width: calc(100% - 50px);
+                }
+                .actions {
+                    margin: 2px 0 0 auto;
+                    width: 20%;
+                    text-align: right;
+                    .lnr {
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

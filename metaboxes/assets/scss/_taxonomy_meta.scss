@@ -1,0 +1,15 @@
+.stmt_to_image_field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__holder {
+        min-width: 50px;
+        min-height: 50px;
+        background-color: #aaa;
+        width: 60%;
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.repeater {
+    padding: 15px 15px;
+    border: 1px solid #eee;
+    .repeat {
+        margin: 15px 0;
+        border: 1px solid #eee;
+        padding: 5px 15px;
+        background-color: #eee;
+        .action {
+            display: flex;
+            padding: 15px 0;
+            .pos {
+                background-color: #7979ce;
+                color: #fff;
+                padding: 3px 5px;
+            }
+            .delete {
+                margin-left: auto;
+                background-color: red;
+                color: #fff;
+                padding: 3px 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.addField {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 50%;
+    background: #eee;
+    margin: 30px auto 0;
+    cursor: pointer;
+}

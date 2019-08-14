@@ -1,0 +1,55 @@
+@import "../components/mixins";
+@import "../variables";
+
+.x_iconbox {
+    &__icon {
+        margin: 0 0 30px;
+        font-size: 53px;
+    }
+    &__title {
+        margin: 0 0 15px;
+        font-size: 21px;
+    }
+    &__content {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    //Styles
+    &_icon_left {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .icon {
+            margin-bottom: 0;
+            margin-right: 15px;
+        }
+        .x_iconbox__title {
+            margin-bottom: 0;
+            .title {
+                margin-bottom: 0;
+            }
+        }
+        .content {
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(767px) {
+    .x_iconbox_icon_right,
+    .x_iconbox_icon_left {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        .icon {
+            width: 100%;
+            margin: 0 0 15px;
+        }
+    }
+}

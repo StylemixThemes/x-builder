@@ -1,0 +1,139 @@
+@import "../../variables";
+@import "../../components/mixins";
+
+.style_1.x_archive_products {
+    display: flex;
+    padding: 0 15px;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    .x_archive_product {
+        position: relative;
+        display: block;
+        text-decoration: none !important;
+        width: 25%;
+        padding: 30px 0 40px;
+        &__image {
+            margin: 0 0 15px;
+            position: relative;
+            text-align: center;
+        }
+        &__content {
+            padding: 0 10px;
+        }
+        .x_timer {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        &__title {
+            h5 {
+                font-size: 13px;
+                line-height: 19px;
+                color: #444444;
+                font-weight: 400;
+            }
+        }
+        &__price {
+            .price {
+                font-size: 23px;
+                color: #212121;
+                font-weight: 600;
+            }
+            .regular_price {
+                color: #c4c4c4;
+                text-decoration: line-through;
+                font-size: 12px;
+            }
+        }
+        &__stock {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            padding: 4px 5px 3px;
+            font-size: 9px;
+            line-height: 9px;
+            text-align: right;
+            color: #fff;
+            letter-spacing: 1px;
+            background-color: #ca0036;
+            &:before {
+                content: '';
+                position: absolute;
+                top: -4px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0 5px 5px;
+                border-color: transparent transparent #b50130 transparent;
+
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            border-top: 1px dashed #f0f0f0;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 1px;
+            border-left: 1px dashed #f0f0f0;
+        }
+    }
+
+    &__6 {
+        .x_archive_product {
+            width: 16.6666%;
+        }
+    }
+
+    &__5 {
+        .x_archive_product {
+            width: 20%;
+        }
+    }
+
+    &__3 {
+        .x_archive_product {
+            width: 33.3333%;
+        }
+    }
+
+    &__2 {
+        .x_archive_product {
+            width: 50%;
+        }
+    }
+
+}
+
+@include breakpoint(1024px) {
+    .style_1.x_archive_products .x_archive_product {
+        padding: 0 0 15px;
+    }
+}
+
+@include breakpoint(768px) {
+    .style_1.x_archive_products .x_archive_product {
+        width: 25%;
+    }
+}
+
+@include breakpoint(600px) {
+    .style_1.x_archive_products .x_archive_product {
+        width: 50%;
+    }
+}
+
+@include breakpoint(400px) {
+    .style_1.x_archive_products .x_archive_product {
+        width: 100%;
+    }
+}

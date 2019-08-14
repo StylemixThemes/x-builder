@@ -1,0 +1,57 @@
+@import "../components/base_variables";
+@import "typo";
+
+.x-colorpicker-wrapper {
+    position: relative;
+}
+
+.x-colorpicker {
+    max-width: 250px;
+    padding-right: 40px;
+    position: relative;
+    .colorpicker-toggle {
+        position: relative;
+        .colorpicker-toggle-preview {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            display: block;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: 1px solid rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+    }
+    .colorpicker-clear {
+        position: absolute;
+        right: 13px;
+        top: 8px;
+        background-color: #dedede;
+        width: 20px;
+        height: 20px;
+        line-height: 18px;
+        font-size: 9px;
+        border-radius: 50%;
+        text-align: center;
+        border: 2px solid #fff;
+        cursor: pointer;
+        color: #fff;
+        &:hover {
+            background-color: $delete;
+        }
+    }
+}
+
+.hu-color-picker {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 219px !important;
+    .color-type {
+        display: flex;
+        input {
+            margin: 0;
+        }
+    }
+}

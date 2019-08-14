@@ -1,0 +1,114 @@
+@import "../variables";
+@import "../components/mixins";
+@import "../components/timer";
+
+.x_departments_carousel_with_grid_products {
+    &__categories {
+        padding: 0 100px;
+        margin: 0 0 50px;
+        background-color: #ffcd26;
+    }
+    .owl-stage-outer {
+        z-index: 90;
+        .owl-stage {
+            width: 100%;
+        }
+    }
+    .owl-nav {
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            outline: none !important;
+            background-color: #ffcd26 !important;
+            z-index: 90000;
+            span {
+                font-size: 25px;
+                color: $original_m_c;
+            }
+        }
+        .owl-prev {
+            left: 0;
+        }
+        .owl-next {
+            right: 0;
+            width: 101px;
+        }
+    }
+    &__category {
+        position: relative;
+        padding: 24px 15px 20px;
+        max-width: 170px;
+        color: #342e33;
+        text-align: center;
+        border-right: 1px dashed rgba(255,255,255,0.5);
+        z-index: 90;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+        i {
+            display: block;
+            padding-bottom: 15px;
+            font-size: 30px;
+        }
+        &:hover,
+        &.active {
+            background-color: $original_s_c;
+        }
+    }
+}
+
+@include breakpoint(1200px) {
+    body {
+        .style_1.x_archive_products .x_archive_product {
+            width: 25%;
+        }
+    }
+}
+
+@include breakpoint(1024px) {
+    .x_departments_carousel_with_grid_products {
+        &__categories {
+            margin-bottom: 30px;
+            padding: 0 31px;
+        }
+
+        .owl-nav {
+            .owl-next,
+            .owl-prev {
+                width: 30px;
+            }
+        }
+    }
+
+    .x_departments_carousel_with_grid_products__category {
+        max-width: inherit;
+    }
+}
+
+@include breakpoint(992px) {
+    body {
+        .style_1.x_archive_products .x_archive_product {
+            width: 33.33%;
+        }
+    }
+}
+
+@include breakpoint(768px) {
+    body {
+        .style_1.x_archive_products .x_archive_product {
+            width: 50%;
+        }
+    }
+}
+
+@include breakpoint(400px) {
+    body {
+        .style_1.x_archive_products .x_archive_product {
+            width: 100%;
+        }
+    }
+}

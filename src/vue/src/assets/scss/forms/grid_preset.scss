@@ -1,0 +1,48 @@
+@import "typo";
+
+.grid_preset {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px -15px 0;
+    label {
+        position: relative;
+        display: block;
+        flex: 50% 1 0;
+        margin: 0 0 15px;
+        text-align: left;
+        width: 100%;
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+        }
+        .grid_preset_column {
+            display: flex;
+            margin: 0 7.5px;
+            padding: 5px;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            span {
+                padding: 0 2px;
+                flex-grow: 1;
+                &:before {
+                    content: '';
+                    display: block;
+                    height: 40px;
+                    width: 100%;
+                    background-color: #eee;
+                }
+            }
+        }
+        &.active {
+            .grid_preset_column {
+                border-color: #007bff;
+            }
+        }
+    }
+}

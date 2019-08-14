@@ -1,0 +1,23 @@
+.mx-datepicker {
+    width: 100% !important;
+    margin: 0 0 30px;
+    input.mx-input {
+        height: 2.6rem;
+        margin-bottom: 0 !important;
+        background-color: transparent;
+        border: .1rem solid #d1d1d1;
+        border-radius: 6px;
+        box-shadow: none;
+    }
+}
+
+.mx-calendar-content {
+    .mx-calendar-table {
+        tr {
+            td {
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+}

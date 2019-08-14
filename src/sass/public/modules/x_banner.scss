@@ -1,0 +1,89 @@
+@import "../components/mixins";
+
+.x_banner {
+    position: relative;
+    display: block;
+    padding: 20px;
+    min-height: 228px;
+    background-color: #fff;
+    background-size: cover;
+    color: inherit !important;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+    }
+
+    > * {
+        position: relative;
+        z-index: 99;
+    }
+
+    .content {
+        margin-bottom: 21px;
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .title {
+        //margin-left: -4px;
+    }
+
+    > *:last-child {
+        margin-bottom: 0;
+    }
+
+    &.titlesubtitlecontent {
+        .title {
+            margin-bottom: 1px;
+        }
+
+        .subtitle {
+            margin-left: -8px;
+            margin-bottom: 34px;
+        }
+
+        //.content {
+        //    &:before {
+        //        display: block;
+        //        content: '';
+        //        width: 20px;
+        //        height: 3px;
+        //        margin-bottom: 23px;
+        //        background-color: #eaeaea;
+        //    }
+        //}
+    }
+
+    &.no-subtitle {
+        .title {
+            margin-bottom: 20px;
+        }
+    }
+
+    .btn {
+        margin: 15px 0 0;
+    }
+}
+
+@include breakpoint(laptop) {
+    .x_banner {
+        min-height: 227px;
+    }
+}
+
+@include breakpoint(tabletonly) {
+    .x_banner .content:before {
+        display: none !important;
+    }
+}

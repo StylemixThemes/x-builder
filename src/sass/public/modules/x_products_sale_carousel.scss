@@ -1,0 +1,183 @@
+@import "../components/mixins";
+@import "../components/timer";
+@import "../variables";
+
+.x_products_sale_carousel {
+    &__title {
+        margin-bottom: 40px;
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    &__product {
+        display: flex;
+        margin: 9px;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+
+        &_image {
+            width: 45.52%;
+        }
+
+        &_content {
+            width: 50%;
+            margin-left: auto;
+            z-index: 10;
+        }
+
+        &_title {
+            margin: 0 0 12px;
+            padding-right: 15px;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #414141;
+        }
+
+        &_price {
+            .regular_price {
+                margin-right: 5px;
+                font-size: 12px;
+                color: #c4c4c4;
+                text-decoration: line-through;
+            }
+
+            .price {
+                font-size: 23px;
+                color: #212121;
+            }
+        }
+
+        &_timer {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: -10px;
+                width: 10px;
+                background-color: #f0f3f5;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 100%;
+                right: -10px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 10px 10px 0 0;
+                border-color: #d6dcdf transparent transparent transparent;
+
+            }
+
+            .x_timer {
+                position: static;
+                background-color: #f0f3f5;
+                margin: 0 0 12px;
+            }
+        }
+
+        &:hover {
+            background-color: $original_s_c;
+
+            .x_products_sale_carousel__product_price span,
+            .x_products_sale_carousel__product_title {
+                color: #fff;
+            }
+        }
+    }
+
+
+}
+
+@include breakpoint(1440px) {
+    .x_products_sale_carousel__product_title {
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .x_products_sale_carousel__product_timer {
+        display: none;
+    }
+    .x_products_sale_carousel__product_timer .x_timer {
+        margin-bottom: 10px;
+    }
+
+    .x_products_sale_carousel__product_price .price {
+        font-size: 19px;
+    }
+}
+
+@include breakpoint(tablet) {
+
+    .x_products_sale_carousel {
+
+        &__product {
+            padding: 15px;
+
+            &_image {
+                position: absolute;
+                top: 9px;
+                left: 9px;
+                right: 9px;
+                bottom: 9px;
+                width: auto;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: auto !important;
+                    opacity: 0.3;
+                }
+            }
+
+            &_content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                min-height: 160px;
+
+                > * {
+                    width: 100%;
+                }
+            }
+
+            &_timer {
+                position: relative;
+                top: -10px;
+                max-height: 63px;
+                width: calc(100% + 15px);
+            }
+        }
+
+
+    }
+}
+
+@include breakpoint(tabletonly) {
+    .x_products_sale_carousel {
+        .owl-carousel .owl-stage-outer {
+            width: 100%;
+        }
+
+        .x_owl_nav {
+            float: none;
+            margin: 30px 10px 0;
+        }
+
+        &__title {
+            margin: 0 0 20px;
+        }
+    }
+}

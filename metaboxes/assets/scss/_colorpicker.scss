@@ -1,0 +1,40 @@
+.stmt_colorpicker_wrapper {
+    position: relative;
+    .vc-photoshop {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        margin-top: -23px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(5px);
+        transition: .3s ease;
+        z-index: 999;
+        &:hover {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .vc-ps-ac-btn {
+            display: none;
+        }
+    }
+    > input[type='text'] {
+        &:focus + div .vc-photoshop {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+    > span {
+        position: absolute;
+        bottom: 32px;
+        right: 10px;
+        display: block;
+        width: 24px;
+        height: 24px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+    }
+}

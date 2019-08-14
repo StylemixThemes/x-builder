@@ -1,0 +1,17 @@
+@import "typo";
+
+.x-media-library {
+    display: flex;
+    margin: 15px 0;
+    img {
+        max-width: 200px;
+        height: auto;
+    }
+    .image-field {
+        margin-right: 30px;
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}

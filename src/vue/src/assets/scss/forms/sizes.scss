@@ -1,0 +1,9 @@
+@import "typo";
+
+.input-group-text {
+    cursor: pointer;
+    &.active {
+        background-color: #9a9a9a;
+        color: #fff;
+    }
+}

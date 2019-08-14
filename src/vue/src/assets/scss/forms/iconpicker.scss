@@ -1,0 +1,55 @@
+.stm_selected_icon__wrapper {
+    position: relative;
+    margin: 30px 0 30px;
+}
+
+.stm_selected_icon {
+}
+
+.stm_selected_icon .selected_icon {
+    font-size: 28px;
+    position: relative;
+    top: 2px;
+}
+
+.sets {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 320px;
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    z-index: 9999999;
+}
+
+.sets .set h6 {
+    margin: 0 0 10px;
+}
+
+.sets .set {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.set_icons {
+    display: flex;
+    padding: 5px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.set_icons .set_icon {
+    padding: 0 10px 15px;
+    font-size: 28px;
+}
+
+.set_icons .set_icon i {
+    display: block;
+}
+
+.set_icons .set_icon:hover i {
+    transform: scale(1.3);
+}
+

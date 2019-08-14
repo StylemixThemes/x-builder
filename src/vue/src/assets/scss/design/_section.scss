@@ -1,0 +1,17 @@
+@import "../components/base_variables";
+@import "../components/mixins";
+
+.section {
+    position: relative;
+    padding: 40px 22px 25px;
+    margin: 40px 0 55px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    .draggable_wrapper {
+        min-height: 50px;
+    }
+    &:last-child {
+        margin-bottom: 20px;
+    }
+}

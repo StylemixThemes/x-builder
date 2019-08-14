@@ -1,0 +1,109 @@
+@import "../variables";
+@import "../components/mixins";
+
+.elab_hint_images {
+    padding: 0 0 60px;
+    background-color: #f7f9fa;
+}
+
+.elab_hint_image {
+    &__inner {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+    }
+    &__hint {
+        position: absolute;
+        color: #fff;
+        z-index: 9;
+        &_plus {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            background: $original_s_c;
+            border-radius: 50%;
+            color: #fff;
+            transition: .15s ease .3s;
+        }
+        &_text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            text-align: left;
+            padding: 5px 0;
+            width: 0;
+            line-height: 38px;
+            left: 100%;
+            overflow: hidden;
+            border-bottom-right-radius: 23px;
+            border-top-right-radius: 23px;
+            text-overflow: ellipsis;
+            background: $original_s_c;
+            transition: .3s ease;
+        }
+        &:hover {
+            .elab_hint_image__hint_plus {
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+                transition-delay: 0s;
+            }
+            .elab_hint_image__hint_text {
+                width: 200px;
+                padding: 5px 10px;
+                transition-delay: .15s;
+            }
+        }
+        &_left {
+            .elab_hint_image__hint_text {
+                left: auto;
+                right: 100%;
+                transform: translateX(12px);
+                border-radius: 23px 0 0 23px;
+            }
+            &:hover {
+                .elab_hint_image__hint_text {
+                    transform: translateX(0);
+                    padding-left: 20px;
+                }
+                .elab_hint_image__hint_plus {
+                    border-radius: 0 50% 50% 0;
+                }
+            }
+        }
+    }
+    &_1 {
+        width: 46.64vw;
+        text-align: right;
+        .elab_hint_image__inner {
+            //margin-left: 150px;
+        }
+    }
+    &_2 {
+        width: 51vw;
+        .elab_hint_image__inner {
+            margin-top: 10vh;
+        }
+    }
+    &_3 {
+        width: 46.64vw;
+        text-align: right;
+        .elab_hint_image__inner {
+
+        }
+    }
+}
+
+@include breakpoint(500px) {
+    .elab_hint_image__hint {
+        &_plus {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+        &_text {
+            line-height: 22px;
+            max-width: 150px;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+.hu-color-picker {
+    padding: 10px;
+    background: #1d2024;
+    border-radius: 4px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
+    z-index: 1;
+    canvas {
+        vertical-align: top;
+    }
+    .color-set {
+        display: flex;
+        .saturation {
+            position: relative;
+            cursor: pointer;
+            .slide {
+                position: absolute;
+                left: 100px;
+                top: 0;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+                pointer-events: none;
+            }
+        }
+        .hue {
+            position: relative;
+            margin-left: 8px;
+            cursor: pointer;
+            .slide {
+                position: absolute;
+                left: 0;
+                top: 100px;
+                width: 100%;
+                height: 4px;
+                background: #fff;
+                box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
+                pointer-events: none;
+            }
+        }
+        .alpha {
+            position: relative;
+            margin-left: 8px;
+            cursor: pointer;
+            .slide {
+                position: absolute;
+                left: 0;
+                top: 100px;
+                width: 100%;
+                height: 4px;
+                background: #fff;
+                box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
+                pointer-events: none;
+            }
+        }
+    }
+    .color-show {
+        margin-top: 8px;
+        display: flex;
+        .show {
+            position: relative;
+            flex: 1;
+            .color {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .sucker {
+            width: 30px;
+            fill: #9099a4;
+            background: #2e333a;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover,
+            &.active {
+                fill: #1593ff;
+            }
+        }
+    }
+    .color-type {
+        margin-top: 8px;
+        font-size: 12px;
+        .name {
+            width: 60px;
+            height: 30px;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #999;
+            background: #252930;
+        }
+        .value {
+            height: 30px;
+            padding: 0 12px;
+            border: 0;
+            color: #fff;
+            background: #2e333a;
+            box-sizing: border-box;
+        }
+    }
+    .colors {
+        padding: 0;
+        margin: 0;
+        &.history {
+            margin-top: 8px;
+            border-top: 1px solid #2e333a;
+        }
+        .item {
+            position: relative;
+            width: 16px;
+            height: 16px;
+            margin: 10px 0 0 10px;
+            border-radius: 3px;
+            vertical-align: top;
+            display: inline-block;
+            transition: all 0.1s;
+            cursor: pointer;
+            &:nth-child(8n + 1) {
+                margin-left: 0;
+            }
+            &:hover {
+                transform: scale(1.4);
+            }
+            .alpha {
+                height: 100%;
+                border-radius: 4px; // 大一像素，否则四个角会看到白点
+            }
+            .color {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 3px;
+            }
+        }
+    }
+}

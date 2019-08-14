@@ -1,0 +1,85 @@
+@import "components/base_variables";
+
+.row {
+    counter-reset: column;
+    min-height: 50px;
+    padding: 32px 14px 22px;
+    margin: 0 0 10px;
+    //background-color: #eee;
+    text-align: center;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.col {
+    position: relative;
+    min-height: 50px;
+    margin: 15px 0 5px;
+    padding: 0 5px;
+    border-radius: 5px;
+    z-index: 999;
+
+    &:before {
+        position: absolute;
+        left: 15px;
+        top: -14px;
+        padding: 5px;
+        min-width: 81px;
+        counter-increment: column;
+        content: "Column " counter(column);
+        background-color: #fff;
+        color: #8c9197;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 13px;
+        font-family: Arial, sans-serif, Helvetica;
+        z-index: 9999;
+        transition: .3s ease;
+    }
+
+    &:hover {
+        &:before {
+            background-color: $edit;
+            color: #fff;
+        }
+    }
+}
+
+.col-x {
+    position: relative;
+    min-height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 24px 16px 34px;
+}
+
+
+/*INNER COLUMN*/
+
+.row .col {
+    .row {
+        padding: 0;
+
+        .col {
+            margin: 15px 0 5px;
+
+            &:before {
+                display: none;
+            }
+
+            .col-actions {
+                .right_part {
+                    a {
+                        span {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

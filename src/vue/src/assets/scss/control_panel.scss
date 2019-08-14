@@ -1,0 +1,13 @@
+@import "components/base_variables";
+
+.control_panel {
+    max-height: 70vh;
+    //margin-top: 49px;
+    padding: 15px 30px;
+    border: 1px solid #f7f2f2;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+    font-family: $font;
+}

@@ -1,0 +1,5 @@
+node_modules/
+/src/vue/node_modules/
+workspace.xml
+.idea
+.DS_Store

@@ -1,0 +1,14 @@
+.stmt_to_faq__single_top {
+    position: relative;
+    padding-right: 30px;
+    i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 1px solid red;
+        border-radius: 50%;
+        padding: 5px;
+        color: red;
+        cursor: pointer;
+    }
+}

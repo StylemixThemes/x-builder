@@ -1,0 +1,116 @@
+@import "components/base_variables";
+@import "design/section";
+@import "forms/typo";
+
+.x-builder {
+    //padding: 15px 30px;
+    //border: 1px solid #f7f2f2;
+}
+
+.local_draggable {
+    min-height: 50px;
+}
+
+.row-x {
+    position: relative;
+    min-height: 50px;
+    padding: 5px 5px 0;
+    margin: 0 0 10px;
+    text-align: center;
+    background: #efefef;
+    border-radius: 5px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.draggable_wrapper {
+    counter-reset: section;
+}
+
+.row-x,
+.section {
+    &:before {
+        position: absolute;
+        left: 50%;
+        top: -14px;
+        padding: 5px;
+        min-width: 81px;
+        counter-increment: section;
+        content: "Section " counter(section);
+        background-color: #fff;
+        color: #8c9197;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 13px;
+        font-family: Arial, sans-serif, Helvetica;
+        z-index: 9999;
+        transition: .3s ease;
+    }
+
+    &:hover {
+        &:before {
+            background-color: $edit;
+            color: #fff;
+        }
+    }
+}
+
+.row-x {
+    &:before {
+        content: "Row " counter(section);
+        background-color: #efefef;
+    }
+
+    &:hover {
+        &:before {
+            //background: $edit !important;
+        }
+    }
+}
+
+.addSection {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background-color: #fff;
+    text-align: center;
+    color: #8c9197;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    transition: .3s ease;
+
+    &:hover {
+        background-color: $edit;
+        color: #fff;
+        cursor: pointer;
+
+        .hint {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(-5px);
+            transition: .3s ease;
+        }
+    }
+}
+
+.addRow {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 50%;
+    background: #eee;
+    margin: 0 auto;
+    cursor: pointer;
+
+    &.start {
+        margin-bottom: 20px;
+    }
+}
+
+.draggable_wrapper {
+    color: white;
+}

@@ -1,0 +1,49 @@
+@import "typo";
+@import "../components/base_variables";
+
+.x-typography {
+    .row {
+        margin-bottom: 10px;
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    .typo-settings {
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+        span {
+            display: inline-block;
+            position: relative;
+            font-weight: 600;
+            &:before,
+            &:after {
+                position: absolute;
+                top: 50%;
+                margin-top: -1px;
+                content: '';
+                background-color: #eee;
+                display: block;
+                width: 100px;
+                height: 1px;
+            }
+            &:before {
+                right: 100%;
+                margin-right: 15px;
+            }
+            &:after {
+                left: 100%;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.size_wrapper {
+    position: relative;
+    padding-right: 90px;
+    input {
+        width: 100%;
+    }
+}

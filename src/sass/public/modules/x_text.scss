@@ -1,0 +1,9 @@
+.x_text {
+    margin: 0 0 30px;
+    p {
+        line-height: inherit;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

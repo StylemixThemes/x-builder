@@ -1,0 +1,11 @@
+@import "typo";
+
+.form-group {
+    label {
+        display: block;
+        margin: 0 0 5px;
+    }
+    input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,29 @@
+@import "milligram";
+@import "animation";
+@import "curriculum";
+@import "v-select";
+@import "theme-milligram";
+@import "layout";
+@import "checkbox";
+@import "select";
+@import "radio";
+@import "datepicker";
+@import "multimedia";
+@import "questions";
+@import "editor";
+@import "quiz";
+@import "order";
+@import "payment";
+@import "input";
+@import "button";
+@import "colorpicker";
+@import "taxonomy_meta";
+@import "faq";
+@import "image";
+@import "hint_image";
+@import "radio_image";
+@import "multiselect";
+
+.toplevel_page_stmt-to-settings .stmt-to-settings {
+    max-width: 1110px;
+}

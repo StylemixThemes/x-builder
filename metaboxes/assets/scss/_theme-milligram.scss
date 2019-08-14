@@ -1,0 +1,24 @@
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner label,
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner legend {
+    font-size: 1rem;
+}
+
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner input[type=search],
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner input[type=tel],
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner input[type=text],
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner input[type=url],
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner input[type=email],
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner input[type=number],
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner input[type=password],
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner select,
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+    height: 2.6rem;
+}
+
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner .container {
+    padding: 0;
+    box-sizing: border-box;
+}

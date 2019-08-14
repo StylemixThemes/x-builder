@@ -1,0 +1,113 @@
+@import "../../components/mixins";
+@import "../../variables";
+
+.x_product_buttons_wrapper {
+    position: relative;
+
+    .x_product_buttons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255,255,255,0.9);
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease;
+        z-index: 99999;
+
+        .x_builder_product_buttons {
+            position: absolute;
+            right: 15px;
+            left: 15px;
+            bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 300px;
+            margin: 0 auto;
+            transform: translateY(-10px);
+            transition: .3s ease;
+            &_buy {
+                flex: 0 0 100%;
+            }
+            .product_type_grouped,
+            .product_type_simple,
+            .added_to_cart,
+            .add_to_cart_button {
+                flex: 0 0 100%;
+                display: block;
+                margin: 0 0 15px;
+                padding: 9px 15px;
+                background-color: $original_s_c;
+                color: $original_m_c;
+                text-align: center;
+                font-size: 12px;
+                border-radius: 22px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                &.added {
+                    display: none;
+                }
+                &:hover {
+                    background-color: $original_m_c;
+                    color: #fff;
+                }
+            }
+
+            .compare.button {
+                margin: 0 0 0 auto;
+                flex: 0 0 49%;
+                color: #676767;
+                text-align: right;
+                font-size: 12px;
+                i {
+                    position: relative;
+                    top: 1px;
+                }
+                &:hover {
+                    color: $original_s_c;
+                }
+
+                &.x_compare {
+                    display: inline-block;
+                }
+            }
+
+            .yith-wcwl-add-to-wishlist {
+                flex: 0 0 49%;
+                color: #676767;
+                font-size: 12px;
+                margin: 0;
+                &:hover {
+                    color: $original_s_c;
+                }
+                a {
+                    color: #676767;
+                    i {
+                        margin-right: 1px;
+                        position: relative;
+                        top: 1px;
+                    }
+                    &:hover {
+                        color: $original_s_c;
+                    }
+                }
+                .feedback {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .x_product_buttons {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+            .stmt_theme_woocoommerce_product_buttons {
+                transform: translateY(0);
+            }
+        }
+    }
+
+}

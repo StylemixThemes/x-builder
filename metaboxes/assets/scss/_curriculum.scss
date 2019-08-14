@@ -1,0 +1,116 @@
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner {
+    .stmt-curriculum {
+        .dropdown-menu {
+            .no-options {
+                display: none !important;
+            }
+        }
+        &.loading {
+            position: relative;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.6);
+                z-index: 100;
+            }
+            &:after {
+                position: absolute;
+                top: 40px;
+                left: 50%;
+                margin-left: -30px;
+                color: #000;
+                font-size: 60px;
+                content: "\e861";
+                font-family: 'Linearicons-Free';
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                animation: spin 2s infinite;
+                transform-origin: center center;
+                z-index: 110;
+            }
+        }
+        .stmt-curriculum-list {
+            margin-bottom: 20px;
+            .stmt-curriculum-single {
+                padding: 8px 15px;
+                display: flex;
+                flex-wrap: nowrap;
+                cursor: move;
+                border: .1rem solid #d1d1d1;
+                border-bottom: 0;
+                transition: .3s ease;
+                &.sortable-ghost {
+                    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+                }
+                &.section {
+                    position: relative;
+                    margin-top: 10px;
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                    input {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    &:not(:first-child) {
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            height: .15rem;
+                            left: -2px;
+                            right: -2px;
+                            top: -12px;
+                            border-bottom: .1rem solid #d1d1d1;
+                            border-bottom-right-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                        }
+                    }
+                }
+                &:last-child {
+                    border-bottom: .1rem solid #d1d1d1;
+                    border-bottom-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+                &:first-child {
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                }
+                > div {
+                    width: 50%;
+                }
+                &-name {
+                    input {
+                        margin-bottom: 0;
+                        border: 0;
+                        width: 100%;
+                        padding: 0;
+                        line-height: 22px;
+                        height: 22px;
+                    }
+                }
+                &-actions {
+                    text-align: right;
+                    .lnr {
+                        vertical-align: middle;
+                        margin-left: 8px;
+                        font-size: 18px;
+                        color: #000;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .v-select {
+            margin-bottom: 15px;
+        }
+    }
+}

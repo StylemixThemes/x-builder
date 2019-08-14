@@ -1,0 +1,22 @@
+.stmt_metaboxes_grid {
+    .stmt_metaboxes_grid__inner {
+        select,
+        textarea,
+        input[type=number],
+        input[type=text] {
+            background-color: #f1f1f1;
+            border: 1px solid #f1f1f1;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+            &:focus,
+            &:active {
+                border-color: #195ec8 !important;
+            }
+        }
+    }
+}
+
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner .stmt-curriculum .stmt-curriculum-list .stmt-curriculum-single-name input,
+.stmt_metaboxes_grid .stmt_metaboxes_grid__inner .stmt-curriculum .stmt-curriculum-list .stmt-curriculum-single.section input {
+    box-shadow: none !important;
+    background-color: transparent !important;
+}

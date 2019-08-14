@@ -1,0 +1,135 @@
+@mixin background-gradient($start, $end){
+    background: -moz-linear-gradient(90deg, $start 0%, $end 100%);
+    background: -webkit-linear-gradient(90deg, $start 0%, $end 100%);
+    background: -o-linear-gradient(90deg, $start 0%, $end 100%);
+    background: -ms-linear-gradient(90deg, $start 0%, $end 100%);
+    background: linear-gradient(180deg, $start 0%, $end 100%);
+}
+
+@mixin box-shadow($x: 0, $y: 0, $blur: 10px, $color: #666){
+    -webkit-box-shadow: $arguments;
+    -moz-box-shadow: $arguments;
+    box-shadow: $arguments;
+}
+
+@mixin drop-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $alpha: rgba(0, 0, 0, 0.1)){
+    -webkit-box-shadow: $x-axis $y-axis $blur $alpha;
+    -moz-box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+    box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+}
+
+@mixin inner-shadow($horizontal:0, $vertical:1px, $blur:2px, $alpha: 0.4){
+    -webkit-box-shadow: inset $horizontal $vertical $blur rgba(0, 0, 0, $alpha);
+    -moz-box-shadow: inset $horizontal $vertical $blur rgba(0, 0, 0, $alpha);
+    box-shadow: inset $horizontal $vertical $blur rgba(0, 0, 0, $alpha);
+}
+
+@mixin bw-gradient($color: #F5F5F5, $start: 0, $stop: 255){
+    background: $color;
+    background: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            color-stop(0, rgb($start,$start,$start)),
+            color-stop(1, rgb($stop,$stop,$stop)));
+    background: -ms-linear-gradient(bottom,
+            rgb($start,$start,$start) 0%,
+            rgb($stop,$stop,$stop) 100%);
+    background: -moz-linear-gradient(center bottom,
+            rgb($start,$start,$start) 0%,
+            rgb($stop,$stop,$stop) 100%);
+    background: -o-linear-gradient(rgb($stop,$stop,$stop),
+            rgb($start,$start,$start));
+}
+
+@mixin background-clip($argument: padding-box){
+    -moz-background-clip: $argument;
+    -webkit-background-clip: $argument;
+    background-clip: $argument;
+}
+
+@mixin pseudo($position,$width,$height){
+    content: '';
+    display: block;
+    position: $position;
+    width: $width;
+    height: $height;
+    z-index: 10;
+}
+
+@mixin antialiased(){
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin absoluted(){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@mixin clearing(){
+    content: '';
+    clear: both;
+    display: block;
+}
+
+@mixin breakpoint($point) {
+    @if $point == laptop {
+        @media (max-width: 1440px) { @content ; }
+    }
+    @else if $point == onlyLaptop {
+        @media (max-width: 1440px) and (min-width: 1100px) { @content ; }
+    }
+    @else if $point == xs {
+        @media (max-width: 767px) { @content ; }
+    }
+    @else if $point == sm {
+        @media (max-width:991px) and (min-width:768px) { @content ; }
+    }
+    @else if $point == sm-xs {
+        @media (max-width:991px) { @content ; }
+    }
+    @else if $point == md {
+        @media (max-width:1199px) and (min-width:992px) { @content ; }
+    }
+    @else if $point == mobile {
+        @media (max-width:515px) { @content ; }
+    }
+    @else if $point == underLaptop {
+        @media (min-width: 1500px) { @content ; }
+    }
+    @else if $point == afterLaptop {
+        @media (max-width: 1500px) { @content ; }
+    }
+    @else if $point == tablet {
+        @media (max-width: 1024px) { @content ; }
+    }
+    @else if $point == tabletland {
+        @media (max-width: 1025px) and (min-width: 992px)  { @content ; }
+    }
+    @else if $point == tabletunder {
+        @media (max-width: 1023px) { @content ; }
+    }
+    @else if $point == tabletonly {
+        @media (max-width: 769px) { @content ; }
+    }
+    @else if $point == mobile {
+        @media (max-width: 550px)  { @content ; }
+    }
+    @else if $point == tabletized {
+        @media (max-width: 769px) and (min-width: 425px)  { @content ; }
+    }
+    @else if $point == mobilized {
+        @media (max-width: 425px) { @content ; }
+    }
+    @else if $point == iphone5portrait {
+        @media (max-width: 570px) and (min-width: 551px)  { @content ; }
+    }
+    @else if $point == min {
+        @media (max-width: 360px) { @content ; }
+    }
+    @else {
+        @media (max-width: $point) { @content ; }
+    }
+}

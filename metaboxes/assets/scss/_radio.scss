@@ -1,0 +1,20 @@
+.stmt_metaboxes_grid__inner {
+    input[type="checkbox"],
+    input[type="radio"] {
+        display: inline-block !important;
+    }
+    .stmt-to-radio {
+        margin: 0 0 30px 30px;
+        input {
+            position: relative;
+            top: 5px;
+            vertical-align: top;
+            margin: 0 5px 0 0 !important;
+        }
+        label {
+            margin: 0 0 15px !important;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+}

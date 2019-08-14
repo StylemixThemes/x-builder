@@ -1,0 +1,28 @@
+.x_timer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9fc;
+    > div {
+        position: relative;
+        &.separator {
+            color: #e2e2e3;
+        }
+        .number {
+            font-size: 20px;
+            line-height: 20px;
+            color: #494949;
+            font-weight: 400;
+        }
+        .format {
+            font-size: 7px;
+            line-height: 7px;
+            color: #6f6f6f;
+            text-transform: uppercase;
+        }
+    }
+}

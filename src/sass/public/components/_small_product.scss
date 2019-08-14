@@ -1,0 +1,135 @@
+@import "../variables";
+@import "../components/mixins";
+
+.x_small_products {
+    display: flex;
+    flex-wrap: wrap;
+
+    &_1 {
+        .x_small_product {
+            flex: 0 0 100%;
+
+            &:nth-child(n) {
+                border-right-color: transparent;
+            }
+        }
+    }
+
+    &_2 {
+        .x_small_product {
+            flex: 0 0 50%;
+
+            &:nth-child(5n) {
+                border-right-color: transparent;
+            }
+        }
+    }
+
+    &_3 {
+        .x_small_product {
+            flex: 0 0 33.333%;
+
+            &:nth-child(3n) {
+                border-right-color: transparent;
+            }
+        }
+    }
+
+    &_4 {
+        .x_small_product {
+            flex: 0 0 25%;
+
+            &:nth-child(4n) {
+                border-right-color: transparent;
+            }
+        }
+    }
+
+    &_5 {
+        .x_small_product {
+            flex: 0 0 20%;
+
+            &:nth-child(5n) {
+                border-right-color: transparent;
+            }
+        }
+    }
+
+    &_6 {
+        .x_small_product {
+            flex: 0 0 16.666%;
+
+            &:nth-child(6n) {
+                border-right-color: transparent;
+            }
+        }
+    }
+}
+
+.x_small_product {
+    flex: 0 0 33.33%;
+    padding: 0 0 30px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-right: 1px solid #f6f6f6;
+    &__label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 27px;
+        background-color: #2659CF;
+        color: #fff;
+        font-size: 11px;
+        line-height: 25px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        z-index: 90;
+    }
+    &__image {
+        flex: 0 0 40%;
+        padding-left: 15px;
+    }
+    &__content {
+        flex: 0 0 60%;
+        padding: 0 0 0 15px;
+    }
+    &__brand {
+        margin: 0 0 10px;
+        color: #6a6a6a;
+        font-size: 13px;
+        font-style: italic;
+    }
+    &__title {
+        margin: 0 0 5px;
+        font-size: 14px;
+        line-height: 1.4;
+        font-weight: 700;
+        color: #404040;
+    }
+    &__price {
+        span.regular_price {
+            font-size: 12px;
+            color: #bdbdbd;
+            margin-right: 14px;
+            text-decoration: line-through;
+        }
+        span.price {
+            color: $original_s_c;
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+}
+
+@include breakpoint(767px) {
+    .x_small_products {
+        .owl-stage-outer {
+            width: 100%;
+        }
+    }
+
+    .x_grid_products__tabs .x_owl_nav {
+        float: none;
+    }
+}
